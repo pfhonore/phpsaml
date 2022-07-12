@@ -68,8 +68,8 @@ function plugin_version_phpsaml()
 function plugin_phpsaml_check_prerequisites()
 {
 
-    if (version_compare(GLPI_VERSION, '9.4', 'lt') || version_compare(GLPI_VERSION, '10.0.0', 'gt')) {
-        echo "This plugin requires GLPI >= 9.4 and GLPI < 10.3.0";
+    if (version_compare(GLPI_VERSION, '9.4', 'lt') || version_compare(GLPI_VERSION, '10.0.2', 'gt')) {
+        echo "This plugin requires GLPI >= 9.4 and GLPI <= 10.0.2";
         return false;
     }
 
